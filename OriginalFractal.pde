@@ -38,7 +38,7 @@ public void fractal(int x, int y, int rad)
 		fractal(x, y+rad/4, rad/2);
 		fractal(x, y-rad/4, rad/2);
 		col --;
-		System.out.println(col);
+		//System.out.println(col);
 	}
 
 	/*if(rad > 50)
