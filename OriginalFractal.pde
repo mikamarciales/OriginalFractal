@@ -1,5 +1,5 @@
 int num = 50;
-int col = color(255);
+int col = 255;
 
 public void setup()
 {
