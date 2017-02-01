@@ -4,15 +4,17 @@ int col = color(255);
 public void setup()
 {
 	size(800, 800);
+	background(0);
 }
 
 public void draw()
 {
-	background(0);
+	fill(0, 0, 0, 50);
+	rect(-5, -5, 805, 805);
 	noFill();
 	stroke(col);
 	strokeWeight(1);
-	fractal(mouseX, mouseY, 500);
+	fractal(400, 400, 800);
 }
 
 /*public void mousePressed()
@@ -23,6 +25,11 @@ public void draw()
 	}
 	System.out.println(num);
 }*/
+
+public void mousePressed()
+{
+	num = (int)(Math.random()*805 + 5);
+}
 
 public void fractal(int x, int y, int rad)
 {
